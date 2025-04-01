@@ -6,8 +6,15 @@
     <description>Recent content on Infradawn</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Apr 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 01 Apr 2025 15:44:14 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Create a Blog</title>
+      <link>http://localhost:1313/posts/how-to-create-a-blog/</link>
+      <pubDate>Tue, 01 Apr 2025 15:44:14 +0200</pubDate>
+      <guid>http://localhost:1313/posts/how-to-create-a-blog/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Who Am I</title>
       <link>http://localhost:1313/who-am-i/</link>
@@ -18,13 +25,6 @@
 &lt;h4 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h4&gt;
 &lt;p&gt;I strongly believe my personal characteritics (gender, age, sex orientation, country of origin) should not be relevant for the quality of the content I am writing, and neither I want to disclaim them for safety reasons. I will only give details about me that I believe can somehow help people reading this to relate and to help them.&lt;/p&gt;
 &lt;p&gt;Since a young age I&amp;rsquo;ve been conflicted with the two very different perspectives of life: study, get a steady job and live a regular life (my initial plan was to study law and get a high paying job at the government and never have to think about it again) or risk myself and try to extract the best of my potential and do something meaninful, which meant often sacrificing pleasure and comfort to achieve my goals. At the time of writing, I feel that I am somehow living a mix of both lives.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Beginning</title>
-      <link>http://localhost:1313/posts/the-beginning/</link>
-      <pubDate>Mon, 31 Mar 2025 16:27:46 +0200</pubDate>
-      <guid>http://localhost:1313/posts/the-beginning/</guid>
-      <description>&lt;p&gt;This is my first blog post on &lt;strong&gt;infradawn.xyz&lt;/strong&gt; 🚀.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
