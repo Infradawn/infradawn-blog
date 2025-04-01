@@ -2,3 +2,19 @@ baseURL = 'https://infradawn.xyz/'
 languageCode = 'en-us'
 title = 'Infradawn'
 theme = "PaperMod"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  showMeta = true
+  showMetaTags = true
+  debug = true
+
+[menu]
+  [[menu.main]]
+  identifier = "who-am-i"
+  name = "Who am I?"
+  url = "/who-am-i/"
+  weight = 10
