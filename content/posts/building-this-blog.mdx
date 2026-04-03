@@ -1,0 +1,69 @@
+---
+title: "Building This Blog with Next.js and MDX"
+description: "A look at the tech stack behind infradawn.xyz — why I chose Next.js, MDX, and Tailwind CSS, and how it all fits together."
+date: "2026-04-03"
+tags: ["next.js", "mdx", "web-dev"]
+published: true
+---
+
+When I set out to build this blog, I had a few requirements in mind:
+
+1. **Fast and lightweight** — no heavy JavaScript bundles for what's essentially a reading experience
+2. **Great typography** — content should look and feel as good as Medium
+3. **Developer-friendly authoring** — write in Markdown, but with the power to embed interactive components
+4. **Future-proof** — easy to add features like monetization, newsletters, and auth down the road
+
+## The Stack
+
+Here's what I landed on:
+
+### Next.js (App Router)
+
+Next.js gives me the best of both worlds — static generation for blog posts (fast page loads, great SEO) and API routes for dynamic features when I need them. The App Router's server components are perfect for a content-heavy site.
+
+### MDX
+
+MDX lets me write in Markdown but embed React components when I need something more interactive. A code snippet? Markdown. An interactive demo or custom callout? Just drop in a component.
+
+```tsx
+// I can use components right inside my posts
+<CustomAlert type="info">
+  This is a custom component rendered inside MDX!
+</CustomAlert>
+```
+
+### Tailwind CSS + Typography Plugin
+
+The `@tailwindcss/typography` plugin is a game-changer. It provides beautiful, readable prose styles out of the box with the `prose` class. Combined with Tailwind's utility classes, I have full control over the design.
+
+### Vercel
+
+Deployment is as simple as `git push`. Vercel handles builds, CDN distribution, and gives me analytics — all on a generous free tier. Custom domain setup for `infradawn.xyz` took about two minutes.
+
+## The Content Pipeline
+
+Posts are `.mdx` files stored in `content/posts/` with YAML frontmatter:
+
+```yaml
+---
+title: "My Post Title"
+description: "A brief description"
+date: "2026-04-03"
+tags: ["tag1", "tag2"]
+published: true
+---
+```
+
+At build time, the posts are read from the filesystem, parsed with `gray-matter`, and rendered with `next-mdx-remote`. Simple, fast, and version-controlled.
+
+## What's Next
+
+This is just the foundation. I'm planning to add:
+
+- **RSS feed** for subscribers
+- **Newsletter integration** with an email provider
+- **Syntax highlighting** with a proper theme
+- **Search** across all posts
+- **Analytics** to understand what resonates
+
+But for now, the most important thing is to start writing. The best stack is the one that gets out of your way and lets you ship.
