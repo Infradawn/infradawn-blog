@@ -43,7 +43,7 @@ export default async function BlogPost({ params }: Props) {
   if (!post) notFound();
 
   return (
-    <article className="max-w-3xl mx-auto px-6 py-12">
+    <article className="max-w-3xl mx-auto px-10 py-12">
       <header className="mb-10">
         <div className="flex items-center gap-3 text-sm text-muted mb-3">
           <time dateTime={post.date}>
