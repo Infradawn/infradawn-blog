@@ -4,13 +4,13 @@ export default function About() {
       <h1 className="text-4xl font-bold tracking-tight text-foreground mb-6">
         About
       </h1>
-      <div className="space-y-4 text-foreground/90 leading-7">
+      <div className="space-y-4 text-foreground/85 leading-7">
         <p>
           Welcome to <strong>infradawn</strong> — a space where I write about technology,
           software engineering, and the personal projects I&apos;m building.
         </p>
         <p>
-          I&apos;m Guilherme, a developer passionate about systems, infrastructure,
+          I&apos;m an engineer passionate about systems, infrastructure,
           and building things that work well. This blog is my way of sharing
           what I learn along the way.
         </p>

@@ -66,13 +66,15 @@ export default async function BlogPost({ params }: Props) {
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-secondary/10 text-accent"
+                className="text-xs font-medium px-2.5 py-0.5 rounded-full bg-secondary text-muted"
               >
                 {tag}
               </span>
             ))}
           </div>
         )}
+
+        <div className="mt-8 h-px bg-border" />
       </header>
 
       <div className="prose prose-lg max-w-none">

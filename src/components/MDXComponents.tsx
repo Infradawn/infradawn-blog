@@ -18,14 +18,14 @@ export const mdxComponents: MDXComponents = {
     const href = props.href ?? "";
     if (href.startsWith("/")) {
       return (
-        <Link href={href} className="text-primary underline underline-offset-4 hover:text-primary-dark transition-colors">
+        <Link href={href} className="text-accent underline underline-offset-4 decoration-accent/30 hover:decoration-accent transition-colors">
           {props.children}
         </Link>
       );
     }
     return (
       <a
-        className="text-primary underline underline-offset-4 hover:text-primary-dark transition-colors"
+        className="text-accent underline underline-offset-4 decoration-accent/30 hover:decoration-accent transition-colors"
         target="_blank"
         rel="noopener noreferrer"
         {...props}
@@ -40,13 +40,13 @@ export const mdxComponents: MDXComponents = {
   ),
   li: (props) => <li className="leading-7" {...props} />,
   blockquote: (props) => (
-    <blockquote className="border-l-4 border-primary pl-4 italic my-6 text-muted" {...props} />
+    <blockquote className="border-l-4 border-accent/40 pl-4 italic my-6 text-muted" {...props} />
   ),
   code: (props) => (
-    <code className="bg-secondary/10 text-accent px-1.5 py-0.5 rounded text-sm font-mono" {...props} />
+    <code className="bg-secondary text-foreground px-1.5 py-0.5 rounded text-sm font-mono" {...props} />
   ),
   pre: (props) => (
-    <pre className="bg-secondary text-white rounded-lg p-4 overflow-x-auto my-6 text-sm leading-6" {...props} />
+    <pre className="bg-hero-start text-white/90 rounded-lg p-4 overflow-x-auto my-6 text-sm leading-6" {...props} />
   ),
   hr: () => <hr className="border-border my-8" />,
   img: (props) => (

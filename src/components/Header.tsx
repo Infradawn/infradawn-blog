@@ -2,16 +2,16 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="border-b border-border bg-surface/80 backdrop-blur-sm sticky top-0 z-50">
-      <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tight text-foreground hover:text-primary transition-colors">
-          infradawn
+    <header className="bg-hero-start sticky top-0 z-50">
+      <div className="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+        <Link href="/" className="text-xl font-bold tracking-tight text-white hover:opacity-80 transition-opacity">
+          infradawn<span className="text-accent">.</span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm font-medium text-muted">
-          <Link href="/" className="hover:text-foreground transition-colors">
+        <nav className="flex items-center gap-6 text-sm font-medium text-white/60">
+          <Link href="/" className="hover:text-white transition-colors">
             Home
           </Link>
-          <Link href="/about" className="hover:text-foreground transition-colors">
+          <Link href="/about" className="hover:text-white transition-colors">
             About
           </Link>
         </nav>
